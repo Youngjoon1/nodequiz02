@@ -1,0 +1,15 @@
+<table border="1">
+    <thead>
+        <tr><th>아이디</th><th>이름</th><th>주소</th></tr>
+    </thead>
+    
+    <tbody>
+        <% for(let i=0; i < dao.length; i++) { %>
+            <tr>
+                <td><%= dao[i].id %></td>
+                <td><a href="/member/info"><%= dao[i].name %></a></td>
+                <td><%= dao[i].addr %></td>
+            </tr>
+        <% } %>   
+    </tbody> 
+</table>
